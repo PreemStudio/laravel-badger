@@ -22,49 +22,49 @@ trait HasConfiguration
 
     private int $scale = 1;
 
-    public function with(string $key, mixed $value): self
+    public function with(string $key, mixed $value): static
     {
         $this->$key = $value;
 
         return $this;
     }
 
-    public function withLabel(string $label): self
+    public function withLabel(string $label): static
     {
         return $this->with('label', $label);
     }
 
-    public function withLabelColor(string $labelColor): self
+    public function withLabelColor(string $labelColor): static
     {
         return $this->with('labelColor', $labelColor);
     }
 
-    public function withStatus(string $status): self
+    public function withStatus(string $status): static
     {
         return $this->with('status', $status);
     }
 
-    public function withStatusColor(string $statusColor): self
+    public function withStatusColor(string $statusColor): static
     {
         return $this->with('statusColor', $statusColor);
     }
 
-    public function withStyle(string $style): self
+    public function withStyle(string $style): static
     {
         return $this->with('style', $style);
     }
 
-    public function withIcon(?string $icon): self
+    public function withIcon(?string $icon): static
     {
         return $this->with('icon', $icon);
     }
 
-    public function withIconWidth(int $iconWidth): self
+    public function withIconWidth(int $iconWidth): static
     {
         return $this->with('iconWidth', $iconWidth);
     }
 
-    public function withScale(int $scale): self
+    public function withScale(int $scale): static
     {
         return $this->with('scale', $scale);
     }
