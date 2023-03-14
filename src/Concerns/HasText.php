@@ -19,7 +19,7 @@ trait HasText
 
     public function calculateTextWidth(string $text): int
     {
-        $charWidthTable = json_decode(file_get_contents(realpath('resources/widths-verdana-110.json')), true, JSON_THROW_ON_ERROR);
+        $charWidthTable = json_decode(file_get_contents(__DIR__.'/../../resources/widths-verdana-110.json'), true, JSON_THROW_ON_ERROR);
         $fallbackWidth  = $charWidthTable[64];
 
         $total      = 0;
