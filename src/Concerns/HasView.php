@@ -28,7 +28,7 @@ trait HasView
         $icon           = $this->icon ? $this->sanitizeText($this->icon) : $this->icon;
         $accessibleText = $this->createAccessibleText($label, $status);
 
-        return view(empty($icon) ? "badger::{$this->style}" : "badger::{$this->style}-with-icon", [
+        return view(empty($label) && empty($icon) ? "badger::{$this->style}" : "badger::{$this->style}-with-icon", [
             'accessibleText' => $accessibleText,
             'icon'           => $icon,
             'iconSpanWidth'  => $iconSpanWidth,
