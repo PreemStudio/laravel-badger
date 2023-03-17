@@ -1,5 +1,5 @@
 <svg width="{{ ($scale * $width) / 10 }}" height="{{ $scale * 20 }}" viewBox="0 0 {{ $width }} 200"
-    xmlns="http://www.w3.org/2000/svg"{{ $xlink }} role="img" aria-label="{{ $accessibleText }}">
+    xmlns="http://www.w3.org/2000/svg"{!! $xlink !!} role="img" aria-label="{{ $accessibleText }}">
     <title>{{ $accessibleText }}</title>
     <linearGradient id="a" x2="0" y2="100%">
         <stop offset="0" stop-opacity=".1" stop-color="#EEE" />
