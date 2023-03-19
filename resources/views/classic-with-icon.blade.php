@@ -10,7 +10,7 @@
     </mask>
     <g mask="url(#m)">
         <rect width="{{ $sbRectWidth }}" height="200" fill="#{{ $labelColor }}" />
-        <rect width="{{ $stRectWidth }}" height="200" fill="#{{ $statusColor }}" x="{{ $sbRectWidth }}" />
+        <rect width="{{ $stRectWidth }}" height="200" fill="#{{ $messageColor }}" x="{{ $sbRectWidth }}" />
         <rect width="{{ $width }}" height="200" fill="url(#a)" />
     </g>
     <g aria-hidden="true" fill="#fff" text-anchor="start" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
@@ -19,8 +19,8 @@
             opacity="0.25">{{ $label }}</text>
         <text x="{{ $sbTextStart }}" y="138" textLength="{{ $sbTextWidth }}">{{ $label }}</text>
         <text x="{{ $sbRectWidth + 55 }}" y="148" textLength="{{ $stTextWidth }}" fill="#000"
-            opacity="0.25">{{ $status }}</text>
-        <text x="{{ $sbRectWidth + 45 }}" y="138" textLength="{{ $stTextWidth }}">{{ $status }}</text>
+            opacity="0.25">{{ $message }}</text>
+        <text x="{{ $sbRectWidth + 45 }}" y="138" textLength="{{ $stTextWidth }}">{{ $message }}</text>
     </g>
     @if ($icon)
         <image x="40" y="35" width="{{ $iconWidth }}" height="130"

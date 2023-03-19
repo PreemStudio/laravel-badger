@@ -3,7 +3,7 @@
     <title>{{ $accessibleText }}</title>
     <g>
         <rect fill="#{{ $labelColor }}" width="{{ $sbRectWidth }}" height="200" />
-        <rect fill="#{{ $statusColor }}" x="{{ $sbRectWidth }}" width="{{ $stRectWidth }}" height="200" />
+        <rect fill="#{{ $messageColor }}" x="{{ $sbRectWidth }}" width="{{ $stRectWidth }}" height="200" />
     </g>
     <g aria-hidden="true" fill="#fff" text-anchor="start" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
         font-size="110">
@@ -11,8 +11,8 @@
             opacity="0.1">{{ $label }}</text>
         <text x="{{ $sbTextStart }}" y="138" textLength="{{ $sbTextWidth }}">{{ $label }}</text>
         <text x="{{ $sbRectWidth + 55 }}" y="148" textLength="{{ $stTextWidth }}" fill="#000"
-            opacity="0.1">{{ $status }}</text>
-        <text x="{{ $sbRectWidth + 45 }}" y="138" textLength="{{ $stTextWidth }}">{{ $status }}</text>
+            opacity="0.1">{{ $message }}</text>
+        <text x="{{ $sbRectWidth + 45 }}" y="138" textLength="{{ $stTextWidth }}">{{ $message }}</text>
     </g>
     @if ($icon)
         <image x="40" y="35" width="{{ $iconWidth }}" height="132"

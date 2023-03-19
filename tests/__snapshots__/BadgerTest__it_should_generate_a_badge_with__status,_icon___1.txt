@@ -1,5 +1,5 @@
 <svg width="53.6" height="20" viewBox="0 0 536 200"
-    xmlns="http://www.w3.org/2000/svg" xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; role="img" aria-label=": icon">
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label=": icon">
     <title>: icon</title>
     <g>
         <rect fill="#0f172a" width="212" height="200" />

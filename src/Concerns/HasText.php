@@ -8,13 +8,13 @@ use Illuminate\Support\Arr;
 
 trait HasText
 {
-    public function createAccessibleText(?string $label, string $status): string
+    public function createAccessibleText(?string $label, string $message): string
     {
         if (is_string($label)) {
-            return "{$label}: {$status}";
+            return "{$label}: {$message}";
         }
 
-        return $status;
+        return $message;
     }
 
     public function calculateTextWidth(string $text): int

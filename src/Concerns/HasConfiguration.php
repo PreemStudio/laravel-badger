@@ -10,9 +10,9 @@ trait HasConfiguration
 
     private ?string $labelColor = 'slate.900';
 
-    private ?string $status = null;
+    private ?string $message = null;
 
-    private ?string $statusColor = 'green.600';
+    private ?string $messageColor = 'green.600';
 
     private ?string $style = 'flat';
 
@@ -39,14 +39,14 @@ trait HasConfiguration
         return $this->with('labelColor', $labelColor);
     }
 
-    public function withStatus(string $status): static
+    public function withStatus(string $message): static
     {
-        return $this->with('status', $status);
+        return $this->with('message', $message);
     }
 
-    public function withStatusColor(string $statusColor): static
+    public function withStatusColor(string $messageColor): static
     {
-        return $this->with('statusColor', $statusColor);
+        return $this->with('messageColor', $messageColor);
     }
 
     public function withStyle(string $style): static
