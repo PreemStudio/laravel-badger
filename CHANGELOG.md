@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [1.0.6] - 2023-03-27
+### Added
+- implement `toArray` function to access raw data
+
+
 ## [1.1.0] - 2023-03-19
 ### Changed
 - rename `status` to `message`
@@ -40,7 +45,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.0.0 - 2023-03-14
 
-[Unreleased]: https://github.com/PreemStudio/:package_slug/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/PreemStudio/:package_slug/compare/1.0.6...HEAD
+[1.0.6]: https://github.com/PreemStudio/:package_slug/compare/1.1.0...1.0.6
 [1.1.0]: https://github.com/PreemStudio/:package_slug/compare/1.0.5...1.1.0
 [1.0.5]: https://github.com/PreemStudio/:package_slug/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/PreemStudio/:package_slug/compare/1.0.3...1.0.4
