@@ -8,6 +8,17 @@ trait HasView
 {
     public function render(): string
     {
+        $data = $this->toArray();
+
+        if (empty($data['label']) && empty($data['icon'])) {
+            return view("badger::{$this->style}", $data)->render();
+        }
+
+        return view("badger::{$this->style}-with-icon", $data)->render();
+    }
+
+    public function toArray(): array
+    {
         $messageColor = config("badger.colors.$this->messageColor", $this->messageColor);
         $labelColor   = config("badger.colors.$this->labelColor", $this->labelColor);
         $iconWidth    = $this->iconWidth * 10;
@@ -28,7 +39,7 @@ trait HasView
         $icon           = $this->icon ? $this->sanitizeText($this->icon) : $this->icon;
         $accessibleText = $this->createAccessibleText($label, $message);
 
-        return view(empty($label) && empty($icon) ? "badger::{$this->style}" : "badger::{$this->style}-with-icon", [
+        return [
             'accessibleText' => $accessibleText,
             'icon'           => $icon,
             'iconSpanWidth'  => $iconSpanWidth,
@@ -45,6 +56,6 @@ trait HasView
             'stTextWidth'    => $stTextWidth,
             'width'          => $width,
             'xlink'          => $xlink,
-        ])->render();
+        ];
     }
 }
