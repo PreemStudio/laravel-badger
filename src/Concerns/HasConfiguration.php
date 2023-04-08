@@ -24,7 +24,7 @@ trait HasConfiguration
 
     public function with(string $key, mixed $value): static
     {
-        $this->$key = $value;
+        $this->{$key} = $value;
 
         return $this;
     }

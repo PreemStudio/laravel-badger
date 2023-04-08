@@ -16,12 +16,12 @@ final class Badger
 
     public static function make(): self
     {
-        return new self;
+        return new self();
     }
 
     public static function from(array $config): self
     {
-        $instance = new self;
+        $instance = new self();
 
         foreach ($config as $key => $value) {
             $instance->with($key, $value);

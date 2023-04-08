@@ -43,10 +43,10 @@ it('should generate a badge with { label, status, icon, style }', function () us
 
 it('should correctly escapes string inputs with an icon', function (): void {
     assertMatchesSnapshot(Badger::from([
-        'label'      => '<escape me>',
-        'message'    => '<escape me>',
-        'color'      => '<escape me>',
-        'icon'       => '<escape me>',
+        'label' => '<escape me>',
+        'message' => '<escape me>',
+        'color' => '<escape me>',
+        'icon' => '<escape me>',
         'labelColor' => '<escape me>',
     ]));
 });
@@ -66,19 +66,19 @@ it('should generate a bare badge with { status, style }', function (): void {
 it('should correctly escapes string inputs without an icon', function (): void {
     assertMatchesSnapshot(Badger::from([
         'message' => '<escape me>',
-        'color'   => '<escape me>',
+        'color' => '<escape me>',
     ]));
 });
 
 it('should render a badge in the classic style (using the fluent API)', function (): void {
     assertMatchesSnapshot(
         Badger::make()
-             ->withLabel('Hello')
-             ->withLabelColor('slate.900')
-             ->withStatus('World')
-             ->withStatusColor('green.600')
-             ->withStyle('classic')
-             ->render()
+            ->withLabel('Hello')
+            ->withLabelColor('slate.900')
+            ->withStatus('World')
+            ->withStatusColor('green.600')
+            ->withStyle('classic')
+            ->render(),
     );
 });
 
@@ -90,7 +90,7 @@ it('should render a badge in the flat style (using the fluent API)', function ()
             ->withStatus('World')
             ->withStatusColor('green.600')
             ->withStyle('flat')
-            ->render()
+            ->render(),
     );
 });
 
@@ -103,7 +103,7 @@ it('should render a badge in the classic style with an icon (using the fluent AP
             ->withStatusColor('green.600')
             ->withStyle('flat')
             ->withIcon($icon)
-            ->render()
+            ->render(),
     );
 });
 
@@ -116,7 +116,7 @@ it('should render a badge in the flat style with an icon (using the fluent API)'
             ->withStatusColor('green.600')
             ->withStyle('flat')
             ->withIcon($icon)
-            ->render()
+            ->render(),
     );
 });
 
