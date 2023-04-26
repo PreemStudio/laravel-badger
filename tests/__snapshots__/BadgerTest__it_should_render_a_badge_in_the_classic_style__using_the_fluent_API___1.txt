@@ -1,0 +1,25 @@
+<svg width="79.9" height="20" viewBox="0 0 799 200"
+    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hello: World">
+    <title>Hello: World</title>
+    <linearGradient id="a" x2="0" y2="100%">
+        <stop offset="0" stop-opacity=".1" stop-color="#EEE" />
+        <stop offset="1" stop-opacity=".1" />
+    </linearGradient>
+    <mask id="m">
+        <rect width="799" height="200" rx="30" fill="#FFF" />
+    </mask>
+    <g mask="url(#m)">
+        <rect width="376" height="200" fill="#0f172a" />
+        <rect width="423" height="200" fill="#16a34a" x="376" />
+        <rect width="799" height="200" fill="url(#a)" />
+    </g>
+    <g aria-hidden="true" fill="#fff" text-anchor="start" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+        font-size="110">
+        <text x="60" y="148" textLength="276" fill="#000"
+            opacity="0.25">Hello</text>
+        <text x="50" y="138" textLength="276">Hello</text>
+        <text x="431" y="148" textLength="323" fill="#000"
+            opacity="0.25">World</text>
+        <text x="421" y="138" textLength="323">World</text>
+    </g>
+    </svg>

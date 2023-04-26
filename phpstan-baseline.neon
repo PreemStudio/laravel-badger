@@ -1,0 +1,41 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot access offset 1 on array\\|false\\.$#"
+			count: 1
+			path: src/Badger.php
+
+		-
+			message: "#^Cannot access offset 64 on mixed\\.$#"
+			count: 1
+			path: src/Badger.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of static method Illuminate\\\\Support\\\\Arr\\:\\:get\\(\\) expects array\\|ArrayAccess, mixed given\\.$#"
+			count: 1
+			path: src/Badger.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Badger.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function mb_strlen expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Badger.php
+
+		-
+			message: "#^Parameter \\#1 \\$text of method BombenProdukt\\\\Badger\\\\Badger\\:\\:calculateTextWidth\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Badger.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of method BombenProdukt\\\\Badger\\\\Badger\\:\\:sanitizeText\\(\\) expects string, mixed given\\.$#"
+			count: 2
+			path: src/Badger.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of method BombenProdukt\\\\Badger\\\\Badger\\:\\:sanitizeText\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Badger.php
