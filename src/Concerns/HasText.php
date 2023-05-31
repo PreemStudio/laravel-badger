@@ -8,6 +8,13 @@ use Illuminate\Support\Arr;
 
 trait HasText
 {
+    // For now we don't sanitize the text, but we might want to in the future.
+    public static function sanitizeText(string $value): string
+    {
+        return $value;
+        // return htmlspecialchars($value, ENT_QUOTES | ENT_XML1, 'UTF-8');
+    }
+
     public function createAccessibleText(?string $label, string $message): string
     {
         if (\is_string($label)) {
@@ -32,13 +39,6 @@ trait HasText
         }
 
         return $total;
-    }
-
-    // For now we don't sanitize the text, but we might want to in the future.
-    public static function sanitizeText(string $value): string
-    {
-        return $value;
-        // return htmlspecialchars($value, ENT_QUOTES | ENT_XML1, 'UTF-8');
     }
 
     private function charCodeAt(string $string, int $offset): int
