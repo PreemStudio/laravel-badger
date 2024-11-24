@@ -1,0 +1,17 @@
+<svg width="80.4" height="20" viewBox="0 0 804 200"
+    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="npm: v1.0.0">
+    <title>npm: v1.0.0</title>
+    <g>
+        <rect fill="#0f172a" width="349" height="200" />
+        <rect fill="#16a34a" x="349" width="455" height="200" />
+    </g>
+    <g aria-hidden="true" fill="#fff" text-anchor="start" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+        font-size="110">
+        <text x="60" y="148" textLength="249" fill="#000"
+            opacity="0.1">npm</text>
+        <text x="50" y="138" textLength="249">npm</text>
+        <text x="404" y="148" textLength="355" fill="#000"
+            opacity="0.1">v1.0.0</text>
+        <text x="394" y="138" textLength="355">v1.0.0</text>
+    </g>
+    </svg>
