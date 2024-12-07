@@ -1,0 +1,18 @@
+{
+    "accessibleText": ": <escape me>",
+    "icon": null,
+    "iconSpanWidth": 0,
+    "iconWidth": 130,
+    "label": "",
+    "labelColor": "slate.900",
+    "sbRectWidth": 100,
+    "sbTextStart": 50,
+    "sbTextWidth": 0,
+    "scale": 1,
+    "message": "<escape me>",
+    "messageColor": "green.600",
+    "stRectWidth": 876,
+    "stTextWidth": 776,
+    "width": 976,
+    "xlink": ""
+}
